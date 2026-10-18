@@ -265,3 +265,5 @@ a.tile{text-decoration:none;}
   color:var(--teal);background:var(--surface-alt);border:1px solid var(--border);border-radius:20px;padding:2px 10px;
 }
 .band .tile .tag{background:var(--surface);}
+.tile .tags{display:flex;gap:6px;flex-wrap:wrap;}
+.tile .tag.new{background:var(--honey);border-color:var(--honey);color:#1a2744;}
