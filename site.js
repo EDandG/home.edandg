@@ -21,6 +21,12 @@
     });
   }
 
+  // Hero fills the screen below the sticky top bar (height varies when the nav wraps on phones).
+  var bar = document.querySelector(".topbar");
+  function setBarH() { if (bar) root.style.setProperty("--topbar-h", bar.offsetHeight + "px"); }
+  setBarH();
+  window.addEventListener("resize", setBarH);
+
   // Footer year.
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
